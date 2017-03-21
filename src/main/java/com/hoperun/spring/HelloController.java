@@ -8,16 +8,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@EnableAutoConfiguration
 public class HelloController {
 
     @RequestMapping("/")
     public String index() {
         return "Hello World";
-    }
-
-    public static void main(String[] args)throws Exception {
-        SpringApplication.run(HelloController.class, args);
     }
 }
 
